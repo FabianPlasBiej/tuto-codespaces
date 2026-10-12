@@ -2,13 +2,13 @@
 
 # NB: Ce fichier contient du code à compléter
 
-from rich.markdown import Markdown
 from rich.console import Console
+from rich.markdown import Markdown
 
 
 def moyenne(valeurs):
-    if len valeurs == 0:
-        return ValueError
+    if len(valeurs) == 0:
+        raise ValueError
     somme = 0
     for v in valeurs:
         somme += v
